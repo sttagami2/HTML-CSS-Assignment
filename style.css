@@ -11,7 +11,7 @@ h2, p {
 
 .container {
     width: 960px;
-    margin: 50px 0;
+    margin: 50px auto;
 }
 
 ul {
@@ -28,7 +28,6 @@ ul {
     /* outline: 1px solid rgb(228, 228, 228);
     outline-offset: -1px; */
     margin: 50px 30px 50px 0px;
-    position: relative;
 }
 .frame:last-child {
     margin: 50px 0px 50px 0px;
@@ -61,17 +60,21 @@ img {
 
 @media screen and (max-width:768px) {
     .container {
-        width: 100%;
-        margin: 0 20px 0 20px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .frame {
-        width: 90%;
+        width: 100%;
         float: none;
     }
 
     .frame:first-child {
         margin: 50px 0 20px 0;
+    }
+
+    .frame:nth-child(2) {
+        margin: 0;
     }
 
     .frame:last-child {
