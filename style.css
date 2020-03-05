@@ -47,21 +47,33 @@ ul {
 
 .box {
     padding: 10px;
-    margin: 0;
+    margin: 0 auto;
+}
+.box > h2 {
+    margin: 15px 0 5px;
 }
 
-.box > img {
-    text-align: center;
-}
-
-img {
+.backgroundImg {
     width: 280px;
+    height: 150px;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.backgroundImg1 {
+    background-image: url(img/flow01.png);
+}
+.backgroundImg2 {
+    background-image: url(img/flow02.png);
+}
+.backgroundImg3 {
+    background-image: url(img/flow03.png);
 }
 
 @media screen and (max-width:768px) {
     .container {
         width: 90%;
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
     .frame {
@@ -74,15 +86,15 @@ img {
     }
 
     .frame:nth-child(2) {
-        margin: 0;
+        margin: 20px 0;
     }
 
     .frame:last-child {
         margin: 20px 0 50px 0;
     }
 
-    img {
+    .backgroundImg {
         width: 100%;
-        height: 300px;
+        height: 150px;
     }
 }
